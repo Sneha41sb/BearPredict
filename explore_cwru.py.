@@ -1,0 +1,16 @@
+import os  
+import numpy as np
+import matplotlib.pyplot as plt
+from scipy.io import loadmat
+
+data_dir='/home/nyx/cwru_dataset'
+
+file_names={
+    'Normal': '97.mat',
+    'Inner Race Fault (0.007")': '105.mat',
+    'Ball Fault (0.007")': '118.mat',
+    'Outer Race Fault (0.007")': '130.mat'
+}
+
+#inspect each file
+for label,filename in file_names.items():
